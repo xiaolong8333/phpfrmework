@@ -1,0 +1,59 @@
+    <footer>
+        <div id="footer-wrap">
+            <span id="totop"><a href="#" title="Back to top">top</a></span>
+            <div class="one-fourth first">
+                <h3>联系我</h3>
+                <p>电话号码: +8618483631503<br>
+                    Fax: 1098 765 4321<br>
+                    邮箱: <a href="#">348875033@qq.com</a></p>
+                <p>Zone 8, Upper Puerto, Cagayan de Oro City, Philippines</p>    
+                <h3>Sign up for our newsletter</h3>
+                <form action="#" method="POST" class="subs">
+                    <fieldset>
+                        <input type="text" name="emailadd" class="emailadd" value="Type your email address" onBlur="if (this.value == ''){this.value = 'Type your email address'; }" onFocus="if (this.value== 'Type your email address') {this.value = ''; }" />
+                        <input type="submit" name="submit" value="Go" class="submit" />
+                    </fieldset>
+                </form>
+            </div>
+            <div class="one-fourth">
+                <h3>友情链接</h3>
+                <ul class="links">
+                    <?php foreach($data['connections'] as $k=>$v):?>
+                    <li><a href="<?php echo $v['url'];?>" target="view_window"><?php echo $v['name'];?></a></li>
+                    <?php endforeach;?>
+                </ul>
+            </div>
+            <div class="one-fourth second">
+                <h3>Flickr Stream</h3>
+                <ul class="flickr ">
+                    <li class="first"><a href="#"><img src="/public/home/images/flickr/flickr-1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-3.jpg" alt="" /></a></li>
+                    <li class="first"><a href="#"><img src="/public/home/images/flickr/flickr-4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-5.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-6.jpg" alt="" /></a></li>
+                    <li class="first"><a href="#"><img src="/public/home/images/flickr/flickr-7.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-8.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="/public/home/images/flickr/flickr-9.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="one-fourth">
+                <h3>Any question just contact us!</h3>
+                <form action="#" method="POST" class="quick-contact">
+                    <fieldset>
+                        <input type="text" name="emailadd" class="emailadd" value="Email Address" onBlur="if (this.value == ''){this.value = 'Email Address'; }" onFocus="if (this.value== 'Email Address') {this.value = ''; }" />
+                        <textarea name="message" rows="4" cols="10" onBlur="if (this.value == ''){this.value = 'Your Message'; }" onFocus="if (this.value == 'Your Message') {this.value = '';}">Your Message</textarea>
+                        <input type="submit" name="submit" class="submit" value="Send">
+                    </fieldset>
+                </form>
+            </div>
+        </div><!--end:footer-wrap-->
+        <div id="copyright">
+            <div id="copy-wrap">
+                <p>&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
+            </div>
+        </div>
+    </footer><!--end:footer-->
+
+</body>
+</html>

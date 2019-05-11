@@ -1,0 +1,10 @@
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+
+# Rewrite 定义各重写规则
+
+RewriteRule ^([0-9]+)$ Show/index/roomnum/$1/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]

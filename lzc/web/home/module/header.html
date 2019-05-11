@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>小龙,面对生活，不哭</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<link href="/public/home/css/style.css" type="text/css" rel="stylesheet" media="screen" /> <!-- General style -->
+<link href="/public/home/css/flexslider.css" type="text/css" rel="stylesheet" media="screen"> <!-- FlexSlider -->
+<link href="/public/home/css/jcarousel.css" type="text/css" rel="stylesheet" media="screen" /> <!-- list_work -->
+<link rel="stylesheet" href="/public/home/css/mosaic.css" type="text/css" media="screen" /><!-- mosaic -->
+<link href="/public/home/css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen"><!-- prettyPhoto -->
+<link href="/public/home/css/tipsy.css" type="text/css" rel="stylesheet" media="screen"><!--tooltip-->
+
+<script type="text/javascript" src="/public/home/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/public/home/js/css3-mediaqueries.js"></script><!--mediaqueries-->
+<script type="text/javascript" src="/public/home/js/modernizr-1.7.min.js"></script><!--modernizr-->
+<script type="text/javascript" src="/public/home/js/ddsmoothmenu.js"> </script> <!--menu--> 
+<script type="text/javascript" src="/public/home/js/jquery.flexslider-min.js"></script> <!-- FlexSlider -->
+<script type="text/javascript" src="/public/home/js/jquery.jcarousel.min.js"> </script> <!-- list_work -->
+<script type="text/javascript" src="/public/home/js/mosaic.1.0.1.js"></script> <!-- mosaic -->
+<script type="text/javascript" src="/public/home/js/jquery.prettyPhoto.js"></script><!-- prettyPhoto -->
+<script type="text/javascript" src="/public/home/js/jquery.tipsy.js"></script><!--tooltip-->
+<script type="text/javascript" src="/public/home/js/grayscale-image.js"></script><!-- Grayscale Image -->
+<script src="/public/home/js/script.js"></script><!--search effect-->
+<!--menu--> 
+<script type="text/javascript"> 
+ddsmoothmenu.init({
+    mainmenuid: "smoothmenu1", //menu DIV id
+    orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+    classname: 'ddsmoothmenu', //class added to menu's outer DIV
+    //customtheme: ["#1c5a80", "#18374a"],
+    contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    })
+$(window).load(function() {
+$('a.tip').tipsy({fade: true, gravity: 's'});
+});
+</script>
+<!--BEGIN:SELECTED MENU-->
+<script type="text/javascript">
+     // DOM ready
+     $(function() {
+       
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go to..."
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+       // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+     
+     });
+</script>
+
+<!--featured slider--> 
+<script type="text/javascript">
+$(window).load(function() {
+    $('.flexslider').flexslider();
+}); 
+</script>
+<!--mosaic--> 
+<script type="text/javascript">
+jQuery(function($){
+    $('.circle, .vid, .views').mosaic({
+        opacity     :   0.8         //Opacity for overlay (0-1)
+    });     
+});
+</script>
+<!--List work-->
+<script type="text/javascript">
+function mycarousel_initCallback(carousel){
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 4,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+</script>
+<!--Pretty Photo Animate-->
+<script type="text/javascript">
+$(window).load(function() {
+$("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+var $container = $('#works-container');
+});
+</script>
+<!--Go To Top-->
+    <script type="text/javascript"> 
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 200) {
+                $('#top-area').fadeIn();    
+            } else {
+                $('#top-area').fadeOut();
+            }
+        });
+     
+        $("#totop, #gotop").click(function(){
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        })
+    });
+    </script>
+</head>
+
+<body>
+    <div id="top-area">
+        <div id="top-wrap">
+            <ul class="social_media">
+                <li class="first"><a href="#" class="tip" title="LinkedIn"><img src="/public/home/images/social-linkedin-32x32.png" alt="LinkedIn" /></a></li>
+                <li><a href="#" class="tip" title="Dribbble"><img src="/public/home/images/wechat.png" alt="Dribbble" /></a></li>
+                <li><a href="#" class="tip" title="Facebook"><img src="/public/home/images/social-facebook-32x32.png" alt="Facebook" /></a></li>
+                <li><a href="#" class="tip" title="Flickr"><img src="/public/home/images/social-flickr-32x32.png" alt="Flickr" /></a></li>
+                <li><a href="#" class="tip" title="Twitter"><img src="/public/home/images/social-twitter-32x32.png" alt="Twitter" /></a></li>
+                <li><a href="#" class="tip" title="Wordpress"><img src="/public/home/images/social-wordpress-32x32.png" alt="Wordpress" /></a></li>
+                <li><a href="#" class="tip" title="Skype"><img src="/public/home/images/social-skype-32x32.png" alt="Skype" /></a></li>
+                <li><a href="#" class="tip" title="RSS"><img src="/public/home/images/social-rss-32x32.png" alt="RSS" /></a></li>
+            </ul>
+            <span id="gotop"><a href="#" title="Back to top">&dagger;</a></span>
+        </div>
+    </div> 
+    <header>
+        <div id="header_wrap">
+            <h1 class="logo"><a href="/">小龙的博客</a></h1>
+            <nav id="smoothmenu1" class="ddsmoothmenu">
+                <ul>
+                    <?php foreach($data['navs'] as $k=>$v):
+                    if($v['pid']==0):?>
+                    <li><a href=<?php echo $v['url'];?> 
+                        class=<?php echo $_GET['uri']==$v['name']?"current no-border-left":"no-border-top";?>
+                        <?php if($v['name']=='首页'){
+                        echo 'style="border-left:0px"';
+                    }?>
+                        ><?php echo $v['name'];?></a>
+                        <?php if($v['name']!='首页'):?>
+                          <?php if($v['second']==1):?>
+                          <ul>
+                              <?php foreach($data['navs'] as $key=>$value):
+                              if($value['pid']==$v['id']):?>
+                              <li class=<?php echo $_GET['uri']==$value['url']?"current no-border-left":"no-border-top";?>><a href="services.html">
+                              <?php echo $value['name'];?></a></li>
+                              <?php endif; endforeach;?>
+                          </ul>
+                          <?php endif;?>
+                        <?php endif;?>
+                    </li>
+                    <?php endif; endforeach;?>
+                </ul>
+            </nav>
+        </div>
+    </header>

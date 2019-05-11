@@ -1,0 +1,64 @@
+            <aside>
+            	<div class="whole">
+                	<div id="tabs">
+                       <ul class="filter-title">
+                       	<li><a href="#tab-1">文章分类</a></li>
+                        <li><a href="#tab-2">标签云</a></li>
+                       </ul>
+                       <div id="tab-1">
+                       	<ul class="cat">
+                       		<?php foreach($data['categorys'] as $key=>$value):?>
+                        	<li><a href="#">&rArr; <?php echo $value['name'];?></a></li>
+                        	<?php endforeach;?>
+                        </ul>
+                       </div>
+                       <div id="tab-2">
+                       	<ul class="cat tag">
+                       		<?php foreach($data['tags'] as $key=>$value):?>
+                        	<li><a href="#"><?php echo $value['tag_name'];?></a></li>
+                        	<?php endforeach;?>
+                        </ul>
+                       </div>
+                     </div><!-- END: tab -->
+                </div>
+                <div class="whole">
+                	<h3>最新文章</h3>
+                    <ul class="post">
+                    	<li>
+                        	<a href="blog.html"><img src="/public/home/images/blog/thumb-blog-1.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post One</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="/public/home/images/blog/thumb-blog-2.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post Two</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="/public/home/images/blog/thumb-blog-3.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post Three</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="whole">
+                	<h3>Latest work</h3>
+                    <ul class="post">
+                    	<li>
+                        	<a href="blog.html"><img src="/public/home/images/work/work-thumb-1.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">ThinkMaze</a><br><small>Web Design, Responsive</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="/public/home/images/work/work-thumb-2.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">Smile!</a><br><small>Mobile Interface</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="/public/home/images/work/work-thumb-3.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">3D Architecture Visualization</a><br><small>Wordpress theme</small></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="whole">
+                	<h3>Tweets</h3>
+                	<p><a href="#">@louiejie:</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac rutrum metus.</p>
+                    <p><a href="#">@John Doe:</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac rutrum metus.</p>
+                </div>
+            </aside><!--end:sidebar-->
+        

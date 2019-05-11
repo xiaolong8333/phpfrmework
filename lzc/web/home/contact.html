@@ -1,0 +1,116 @@
+ <?php include_once __HOSTNAME__.'/Module/header';?>
+ <!--end:header-->
+	<div id="page_wrap">
+    	<div class="breadcrumbs">
+        	<div class="second">
+            	<h2>Contact Information</h2>
+				<span class="left"><a href="index.html">Home</a></span>
+			    <span>&rArr; Contact</span>
+			</div>
+            <form id="searchForm">
+                <fieldset>
+                    <div class="input">
+                        <input type="text" name="s" id="s" value="Enter your search" />
+                    </div>
+                    <input type="submit" id="searchSubmit" value="" />
+                </fieldset>
+            </form>
+		</div><!--end:breadcrumbs-->
+        <div id="page_container">
+        	<div id="container">
+            	<div id="map_canvas"></div>
+                <p>Ut vitae sapien nec sem lacinia euismod. Mauris quis mauris odio, a ultricies eros pharetra nisi facilisis. Fusce sagittis cursus risus, et hendrerit magna pellentesque vel. Mauris quis mauris odio, a ultricies eros pharetra nisi facilisis. Fusce sagittis cursus risus, et hendrerit magna pellentesque vel. Ut vitae sapien nec sem lacinia euismod. Mauris quis mauris odio, a ultricies eros pharetra nisi facilisis. Fusce sagittis cursus risus, et hendrerit magna pellentesque vel. Mauris quis mauris odio, a ultricies eros pharetra nisi facilisis. Fusce sagittis cursus risus, et hendrerit magna pellentesque vel.</p>
+                <h3>Please use the form below to get in touch with us.</h3>
+            	<p>Upper Puerto, Cagayan de Oro CIty, Philippines<br><br>
+                      Tel: 012345678910<br>
+                      Fax: 012345678910<br>
+                      Email: <a href="mailto:info@domainname.com">info@domainname.com</a></p>
+                <form action="javascript:alert('success!');" id="ajax-contact-form" class="contactForm">
+                  <div id="note"></div>
+                  <p>
+                    <input type="text" name="name" value="Your Name" onblur="if (this.value == ''){this.value = 'Your Name'; }" onfocus="if (this.value == 'Your Name') {this.value = '';}" >
+                    &nbsp;
+                    <input type="text" name="email" value="Your Email" onblur="if (this.value == ''){this.value = 'Your Email'; }" onfocus="if (this.value == 'Your Email') {this.value = '';}">
+                    &nbsp;
+                    <input type="text" name="website" value="Your Website" onblur="if (this.value == ''){this.value = 'Your Website'; }" onfocus="if (this.value == 'Your Website') {this.value = '';}">
+                  </p>
+                  <p>
+                    <textarea name="message" rows="10" cols="20" onblur="if (this.value == ''){this.value = 'Your Message'; }" onfocus="if (this.value == 'Your Message') {this.value = '';}">Your Message</textarea>
+                  </p>
+                  <p>
+                    <input type="submit" name="submit" class="submit" value="Send Message">
+                  </p>
+                </form>   
+        	</div><!--end:container-->
+        	<aside>
+            	<div class="whole">
+                	<div id="tabs">
+                       <ul class="filter-title">
+                       	<li><a href="#tab-1">Blog Categories</a></li>
+                        <li><a href="#tab-2">Tag cloud</a></li>
+                       </ul>
+                       <div id="tab-1">
+                       	<ul class="cat">
+                        	<li><a href="#">&rArr; Wordpress theme</a></li>
+                            <li><a href="#">&rArr; Minimal</a></li>
+                            <li><a href="#">&rArr; Web Design</a></li>
+                            <li><a href="#">&rArr; Responsive Theme</a></li>
+                        </ul>
+                       </div>
+                       <div id="tab-2">
+                       	<ul class="cat tag">
+                        	<li><a href="#">PHP</a></li>
+                            <li><a href="#">Javascript</a></li>
+                            <li><a href="#">HTML5/CSS3</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Grayscale</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">Editor</a></li>
+                        </ul>
+                       </div>
+                     </div><!-- END: tab -->
+                </div>
+                <div class="whole">
+                	<h3>Recent Post</h3>
+                    <ul class="post">
+                    	<li>
+                        	<a href="blog.html"><img src="images/blog/thumb-blog-1.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post One</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="images/blog/thumb-blog-2.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post Two</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="images/blog/thumb-blog-3.jpg" alt="" /></a>
+                            <p><a href="blog.html">Sample Post Three</a> <br><small>May 30, 2012 3 Comments</small></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="whole">
+                	<h3>Latest work</h3>
+                    <ul class="post">
+                    	<li>
+                        	<a href="blog.html"><img src="images/work/work-thumb-1.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">ThinkMaze</a><br><small>Web Design, Responsive</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="images/work/work-thumb-2.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">Smile!</a><br><small>Mobile Interface</small></p>
+                        </li>
+                        <li>
+                        	<a href="blog.html"><img src="images/work/work-thumb-3.jpg" alt="" /></a>
+                            <p><a href="portfolio.html">3D Architecture Visualization</a><br><small>Wordpress theme</small></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="whole">
+                	<h3>Tweets</h3>
+                	<p><a href="#">@louiejie:</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac rutrum metus.</p>
+                    <p><a href="#">@John Doe:</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac rutrum metus.</p>
+                </div>
+            </aside><!--end:sidebar-->
+        </div><!--end:page_container-->
+    </div><!--end:page_wrap-->
+<?php include_once __HOSTNAME__.'/Module/footer';?>
